@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GamesOnaShelf" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zYD-uu-lj3">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Z7u-aU-4Rm">
+                                <rect key="frame" x="148" y="441" width="133" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Get Started"/>
+                                <connections>
+                                    <action selector="Login" destination="BYZ-38-t0r" eventType="touchUpInside" id="mal-ec-4P5"/>
+                                    <segue destination="ItS-iR-W2m" kind="presentation" modalPresentationStyle="fullScreen" id="v3I-rl-kTn"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GamesOnaShelfLogo" translatesAutoresizingMaskIntoConstraints="NO" id="An1-qt-Pmz">
+                                <rect key="frame" x="0.0" y="159" width="428" height="274"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games On A Shelf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dF-yW-P8d">
+                                <rect key="frame" x="75" y="87" width="278" height="31"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rza-Uo-5yz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rza-Uo-5yz" firstAttribute="trailing" secondItem="7dF-yW-P8d" secondAttribute="trailing" constant="75" id="57q-NE-Jbc"/>
+                            <constraint firstItem="An1-qt-Pmz" firstAttribute="trailing" secondItem="Rza-Uo-5yz" secondAttribute="trailing" id="7kO-el-0BI"/>
+                            <constraint firstItem="An1-qt-Pmz" firstAttribute="trailing" secondItem="Rza-Uo-5yz" secondAttribute="trailing" id="CxD-ou-7G2"/>
+                            <constraint firstItem="Rza-Uo-5yz" firstAttribute="bottom" secondItem="An1-qt-Pmz" secondAttribute="bottom" constant="459" id="K0x-oZ-6Ub"/>
+                            <constraint firstItem="An1-qt-Pmz" firstAttribute="trailing" secondItem="Rza-Uo-5yz" secondAttribute="trailing" id="MLz-40-AhW"/>
+                            <constraint firstItem="An1-qt-Pmz" firstAttribute="top" secondItem="Rza-Uo-5yz" secondAttribute="top" constant="112" id="TF8-xe-FzH"/>
+                            <constraint firstItem="An1-qt-Pmz" firstAttribute="leading" secondItem="Rza-Uo-5yz" secondAttribute="leading" id="mgw-yk-yNa"/>
+                            <constraint firstItem="7dF-yW-P8d" firstAttribute="leading" secondItem="Rza-Uo-5yz" secondAttribute="leading" constant="75" id="pKq-xC-wxm"/>
+                            <constraint firstItem="An1-qt-Pmz" firstAttribute="leading" secondItem="Rza-Uo-5yz" secondAttribute="leading" id="qUi-LS-Na4"/>
+                            <constraint firstItem="7dF-yW-P8d" firstAttribute="top" secondItem="Rza-Uo-5yz" secondAttribute="top" constant="40" id="vZ3-zB-qn8"/>
+                            <constraint firstItem="An1-qt-Pmz" firstAttribute="leading" secondItem="Rza-Uo-5yz" secondAttribute="leading" id="xju-uh-EBI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1609.3457943925232" y="12.958963282937367"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="WrS-gu-IOW">
+            <objects>
+                <navigationController title="Home" toolbarHidden="NO" id="ItS-iR-W2m" customClass="HomeNavigationViewController" customModule="GamesOnaShelf" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="T4i-3r-StA">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XpO-f5-CDi">
+                        <rect key="frame" x="0.0" y="882" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="msr-cg-oYO" kind="relationship" relationship="rootViewController" id="qj0-QL-Rk5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVR-JK-aRn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-734" y="13"/>
+        </scene>
+        <!--Home Collection View Controller-->
+        <scene sceneID="Huc-da-dyz">
+            <objects>
+                <collectionViewController id="msr-cg-oYO" customClass="HomeCollectionViewController" customModule="GamesOnaShelf" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bEb-ZW-Cs1">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uge-7H-U1t">
+                            <size key="itemSize" width="130" height="130"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GameCell" id="ZYd-ib-pRy" customClass="GameCell" customModule="GamesOnaShelf" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5nr-GN-jw4">
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06n-rD-yvk">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="130" height="130"/>
+                                <connections>
+                                    <outlet property="Customlable" destination="06n-rD-yvk" id="2pP-LN-69f"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="msr-cg-oYO" id="WEA-DO-Vae"/>
+                            <outlet property="delegate" destination="msr-cg-oYO" id="0Ah-LH-C9u"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="vMa-nO-aLl">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15c-eT-zCw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.028037383177569" y="12.958963282937367"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GamesOnaShelfLogo" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
